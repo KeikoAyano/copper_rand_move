@@ -1,0 +1,16 @@
+[package]
+name = "random_move"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+cu29 = {  version = "1.2"  }
+bincode = { package = "cu-bincode", version = "2.1", default-features = false, features = ["derive", "alloc"] }
+serde = { version = "1.0", features = ["derive"] }
+cu29-export = {  version = "1.2" , optional = true }
+# cu-memmon = {  version = "1.2" , default-features = false, features = ["std", "memory_monitoring"], optional = true }
+rand = {version = "0.10"}
+
+[build-dependencies]
+cu29-build = {  version = "1.2"  }

@@ -1,0 +1,26 @@
+(
+    constants: [
+        ( id: "speed", value: 10.0, storage: f64),
+    ],
+    tasks: [
+        (
+            id: "loc",
+            type: "tasks::Localization",
+        ),
+        (
+            id: "move",
+            type: "tasks::Movement",
+        ),
+        
+    ],
+    cnx: [
+        (
+            src: "loc",
+            dst: "move",
+            msg: "crate::msgs::Location"
+        ),
+    ],
+    resources: [
+
+    ]
+)
